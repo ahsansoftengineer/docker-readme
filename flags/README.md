@@ -5,12 +5,9 @@
 - **ls *docker container ls*** &rarr; To Display List of Container 
 - **ls** &rarr; To display all files and folder within directory
 - **-e** &rarr; for Environment Variables
-- **-t** &rarr; pseudo-tty // Tag Name you want to set for your image
-- **-i** &rarr; interactive | Keep session open to receive terminal input
-- **-d** &rarr; Detach --detach
-- **-it** &rarr; docker container run -it // Start new container interactively
-- **-it** &rarr; docker container exec -it // Run Additional Command in existing container 
-- 
-
-
-
+- **-t** &rarr; pseudo-tty &rarr; Tag Name you want to set for your image
+- **-i** &rarr; interactive &rarr; Keep session open to receive terminal input
+- **-d** &rarr; **--detach** Detach 
+- **-it** &rarr; *docker container run -it* &rarr; Start new container interactively
+- **-it** &rarr; *docker container exec -it* &rarr; Run Additional Command in existing container 
+- **-p** &rarr; **--publish** Specifying the Port
