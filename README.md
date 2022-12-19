@@ -17,8 +17,6 @@ The Docker daemon ( dockerd ) listens for Docker API requests and manages Docker
 1. An Image is the application we want to run
 2. A Container is an instance of that image running as a process
 3. You can have many containers running of the same image
-4. In this lecture our image will be the Nginx web server
-5. Docker's default image "registry" is called Docker Hub (hub.docker.com)
 ### Containers vs Virtual Machine (VM)
 0. When you create a container with a image then this container is the instance of that image To work with this container the docker give you the id of this container so you can work with command line
 1. Containers aren't Mini-VM's

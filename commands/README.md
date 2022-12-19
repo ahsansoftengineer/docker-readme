@@ -1,9 +1,4 @@
 ## COMMANDS
-### DOCKER HUB
-- **docker login**
-- **docker logout**
-- **docker commit** 
-- **docker push**  Docker Push is a command that is used to push or share a local Docker image or a repository to a central repository; it might be a public registry like https://hub.docker.com or a private registry or a self-hosted registry.
 ### CONTAINER
 - **docker ps** &rarr; Running process
 - **docker ps -a** &rarr; Running, Stop process
