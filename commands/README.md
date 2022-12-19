@@ -1,3 +1,4 @@
+<style src="../style.css"></style>
 ## COMMANDS
 
 ### CONTAINER
