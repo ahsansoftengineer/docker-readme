@@ -1,6 +1,7 @@
 ## COMMANDS
 
 ### CONTAINER
+<span style="color:green">
 - **docker ps** Running process
 - **docker ps -a** Running, Stop process
 - **docker container ls** Running
@@ -11,7 +12,7 @@
 - **docker container start *3d2F mysql1*** alternate
 - **docker rm *3d2F mysql1***  *containerId OR containerName* Remove Container space seperated list
 - **docker container rm *3d2F mysql1***  alternate
-
+</span>
 ### IMAGES
 - **docker rmi *33d imageName:tagName*** Remove Images space seperated list (node:18)
 - **docker image rmi *33d imageName:tagName*** alternate
