@@ -7,21 +7,24 @@ const client = redis.createClient({
   // host: 'https://my-redis-server.com'
   // When using Docker Compose
   host:'redis-server',
-  port: 6379
+  port: 6379,
 })
 
-client.set('redis-key', 'Value Reciving from Redis Server')
 app.get('/', async (req, res) => {
   const date = new Date(Date.now())
-  const redisValue = await client.get('redis-key');
+  console.log({client})
+  // await client.connect();
+  // client.on('error', (err) => console.log('Redis Client Error', err));
+  // client.set('redis-key', 'Value Reciving from Redis Server');
+  // const redisValue = await client.get('redis-key');
   res.send(`
     <h1> Hello from Docker </h1>
     <h2> Date : ${date}</h2>
-    <h3> Redis Value : ${redisValue} </h3>
+    <h3> Redis Value : ${'redisValue'} </h3>
   `);
 });
 
 app.listen(8080, async () => {
   const date = new Date(Date.now())
-  console.warn('Docker Internal Port 8080', date, value);
+  console.warn('Docker Internal Port 8080', date);
 })
