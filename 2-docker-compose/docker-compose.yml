@@ -2,10 +2,13 @@ version: '3'
 services:
   redis-server:
     image: 'redis'
-    # restart: always
-    # ports:
-    #   - '6379:6379'
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    ports:
+      - "6379:6379"
+
   node-app:
     build: .
+    image: "myapp"
     ports:
       - '4001:8080'

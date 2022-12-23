@@ -27,28 +27,6 @@ The Docker daemon ( dockerd ) listens for Docker API requests and manages Docker
 ### How Does Docker Caching Works?
 1. Each layer contains the filesystem changes to the image for the state before the execution of the command and the state after the execution of the command. Docker uses a layer cache to optimize and speed up the process of building Docker images.
 
-### Orchestration allows you to Serve on Multiple Servers acts like single Server Docker S
-1. Docker Swarm
-2. Kubernetes
-3. Swarm vs. K8s
-4. Student Q&A
-5. File Reviews
-6. References Galore
+
 ### What is Commit in Docker?
 1. It can be useful to commit a container's file changes or settings into a new image. This allows you to debug a container by running an interactive shell, or to export a working dataset to another server. Generally, it is better to use Dockerfiles to manage your images in a documented and maintainable way.
-
-### Docker Hello World | docker run hello-world
-#### CLI Output for 
-Unable to find image 'hello-world:latest' locally
-latest: Pulling from library/hello-world
-2db29710123e: Pull complete
-Digest: sha256:c77be1d3a47d0caf71a82dd893ee61ce01f32fc758031a6ec4cf1389248bb833
-Status: Downloaded newer image for hello-world:latest
-#### Runing Output
-Hello from Docker!
-This message shows that your installation appears to be working correctly.
-#### To generate this message, Docker took the following steps:
- 1. The Docker client contacted the Docker daemon.
- 2. The Docker daemon *pulled* the "hello-world" image from the *Docker Hub*. (amd64)
- 3. The Docker daemon created a *new container* from that image which runs the executable that produces the *output* you are currently reading.
- 4. The Docker daemon streamed that *output* to the Docker client, which sent it to your *terminal*.

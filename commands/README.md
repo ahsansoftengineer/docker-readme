@@ -12,7 +12,13 @@
 - **docker container restart *33d, imageName:tagName*** &rarr; alternate
 - **docker rm *3d2F mysql1*** &rarr;  *containerId OR containerName* Remove Container space seperated list
 - **docker container rm *3d2F mysql1*** &rarr;  alternate
-- **docker logs mysql1** if your container has run detech mode you can watch the logs generated running this script
+- **docker logs mysql1** if your container has run detech mode you can watch the logs generated running this script 
+- **docker container port <containerId>** To Know the port of the container 
+- **docker container run --publish 8080:80 --name webhost -d nginx:1.11 nginx -T**
+- nginx:1.11 &rarr; change version of image
+- --publish 8080:80 change host listening port
+- nginx -T change CMD run on start
+
 ### IMAGES
 - **docker pull node** 
 - **docker rmi *33d imageName:tagName*** &rarr; Remove Images space seperated list (node:18)
