@@ -20,3 +20,12 @@ TB1 SELECT * FROM TB1;
 - docker container logs mysql1
 - docker container stats mysql1 // Checking Memory Consumption every seconds
 - docker container top mysql1 // Threads Consume
+
+## SQL SERVER
+- docker ps -a
+- docker exec -it clever_kapitsa "bash" // docker exec -it or_container_id "bash"
+- /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "asdf1234" // starting sql
+- GO // FOR EXECUTING EVERY SQL COMMADN IN TERMINAL TYPE "GO" IN THE NEXT ROW
+- SELECT Name from sys.databases; // Display all databases
+- USE Donation;
+- SELECT * FROM Countrys;
