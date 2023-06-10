@@ -29,3 +29,5 @@ TB1 SELECT * FROM TB1;
 - SELECT Name from sys.databases; // Display all databases
 - USE Donation;
 - SELECT * FROM Countrys;
+- QUITE // TO EXIT FROM SQL COMMAND
+- EXIT // OUT OF DATABASE
