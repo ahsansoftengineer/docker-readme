@@ -23,11 +23,11 @@ TB1 SELECT * FROM TB1;
 
 ## SQL SERVER
 - docker ps -a
-- docker exec -it clever_kapitsa "bash" // docker exec -it or_container_id "bash"
-- /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "asdf1234" // starting sql
-- GO // FOR EXECUTING EVERY SQL COMMADN IN TERMINAL TYPE "GO" IN THE NEXT ROW
-- SELECT Name from sys.databases; // Display all databases
-- USE Donation;
-- SELECT * FROM Countrys;
-- QUITE // TO EXIT FROM SQL COMMAND
-- EXIT // OUT OF DATABASE
+- docker exec -it clever_kapitsa "bash" // docker exec -it or_container_id "bash" // Running a Container
+- mssql@56410de43f0b:/$ /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "asdf1234" // Conneting to Sql Server Connection
+- - IMPORTANT NOTE
+- - GO // FOR EXECUTING EVERY SQL COMMADN IN TERMINAL TYPE "GO" IN THE NEXT ROW
+- 1 SELECT Name from sys.databases; // Display all databases in Sql Server
+- 1 USE Donation;
+- 2 SELECT * FROM Countrys;
+- 3 exit // TO EXIT FROM DATA BASE, SQL SERVER
